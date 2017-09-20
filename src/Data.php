@@ -21,6 +21,11 @@ class Data
 
     const DATA_LIMIT_UNITS = [self::MB_STRING, self::GB_STRING];
 
+    public static function getUnitValue( $constant )
+    {
+        return constant('self::'. $constant);
+    }
+
     private function __construct()
     {
         throw new \Exception('Cannot Instantiate This Class.');
