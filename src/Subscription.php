@@ -5,13 +5,26 @@ namespace AccessManager\Constants;
 
 class Subscription
 {
-    const PREPAID = 'prepaid';
-    const ADVANCEPAID = 'advancepaid';
+    const FREE = 0;
+    const PREPAID = 1;
+    const POSTPAID = 2;
+    const ADVANCEPAID = 3;
 
-    const PREPAID_STRING = 'Prepaid';
-    const ADVANCEPAID_STRING = 'Advance Paid';
+    const FREE_STRING = 'Free';
+    const PREPAID_STRING = 'Pre-Paid';
+    const POSTPAID_STRING = 'Post-Paid';
+    const ADVANCEPAID_STRING = 'Advance-Paid';
 
-    const SUBSCRIPTION_TYPES = [self::PREPAID, self::ADVANCEPAID];
+    const SUBSCRIPTION_TYPES = [
+        self::FREE, self::PREPAID, self::POSTPAID, self::ADVANCEPAID,
+    ];
+
+    const SUBSCRIPTION_TYPES_LIST = [
+        self::FREE          =>  self::FREE_STRING,
+        self::PREPAID       => self::PREPAID_STRING,
+        self::POSTPAID      =>  self::POSTPAID_STRING,
+        self::ADVANCEPAID   =>    self::ADVANCEPAID_STRING,
+    ];
 
     const PRO_RATA = 1;
     const STATUS_ACTIVE = 1;
