@@ -1,18 +1,16 @@
 {
   "name": "access-manager/constants",
+  "description": "A sub-module for Access Manager",
+  "keywords": ["wifi", "hotspot", "mikrotik"],
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Rahul makhija",
-      "email": "rahulmkhj@gmail.com"
-    }
-  ],
-  "autoload" :    {
+  "homepage": "http://accessmanager.in",
+  "require": {
+    "php": ">=5.6.4"
+  },
+  "autoload": {
     "psr-4":{
       "AccessManager\\Constants\\":"src"
     }
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "require": {}
+  "prefer-stable": true
 }
